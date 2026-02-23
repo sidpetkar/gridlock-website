@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/play/:path*',
+        destination: 'https://play.playgridlockgame.xyz/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
