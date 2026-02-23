@@ -27,16 +27,16 @@ export default function Home() {
 
       {/* 3-Column Image Showcase Grid */}
       <section className="mx-auto max-w-7xl px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-6 items-start">
           
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
+            <div className="w-full flex justify-center mb-8 h-[55vh] md:h-[65vh] max-h-[650px]">
               <Image 
                 src="/image 2095.png" 
                 alt="Gridlock Gameplay" 
-                width={400} 
+                width={500} 
                 height={800} 
-                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
+                className="rounded-[2rem] shadow-lg object-cover object-top h-full w-auto"
                 priority
               />
             </div>
@@ -49,13 +49,13 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
+            <div className="w-full flex justify-center mb-8 h-[55vh] md:h-[65vh] max-h-[650px]">
               <Image 
                 src="/image 2093.png" 
                 alt="Clean Interface" 
-                width={400} 
+                width={500} 
                 height={800} 
-                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
+                className="rounded-[2rem] shadow-lg object-cover object-top h-full w-auto"
                 priority
               />
             </div>
@@ -68,13 +68,13 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
+            <div className="w-full flex justify-center mb-8 h-[55vh] md:h-[65vh] max-h-[650px]">
               <Image 
                 src="/image 2094.png" 
                 alt="Ghost Hints Feature" 
-                width={400} 
+                width={500} 
                 height={800} 
-                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
+                className="rounded-[2rem] shadow-lg object-cover object-top h-full w-auto"
                 priority
               />
             </div>
