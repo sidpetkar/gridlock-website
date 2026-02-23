@@ -30,13 +30,13 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-12 items-start">
           
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8">
+            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
               <Image 
                 src="/image 2095.png" 
                 alt="Gridlock Gameplay" 
-                width={600} 
+                width={400} 
                 height={800} 
-                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
                 priority
               />
             </div>
@@ -49,13 +49,13 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8">
+            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
               <Image 
                 src="/image 2093.png" 
                 alt="Clean Interface" 
-                width={600} 
+                width={400} 
                 height={800} 
-                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
                 priority
               />
             </div>
@@ -68,13 +68,13 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-full flex justify-center mb-8">
+            <div className="w-full flex justify-center mb-8 h-[50vh] md:h-[60vh] max-h-[600px]">
               <Image 
                 src="/image 2094.png" 
                 alt="Ghost Hints Feature" 
-                width={600} 
+                width={400} 
                 height={800} 
-                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                className="rounded-[2rem] border-[8px] border-black shadow-sm object-cover object-top h-full w-auto"
                 priority
               />
             </div>
