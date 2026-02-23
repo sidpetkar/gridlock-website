@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="bg-white selection:bg-brand-purple selection:text-black overflow-hidden">
       {/* Hero Section */}
-      <section className="relative px-6 pt-24 pb-16 lg:px-8 lg:pt-40 lg:pb-32">
+      <section className="relative px-6 pt-24 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="text-5xl font-light tracking-tight text-black sm:text-7xl mb-8">
             A dynamic crossword <br className="hidden sm:block"/> puzzle experience.
@@ -25,72 +25,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Main Image Showcase */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-8 pb-32">
-        <div className="relative rounded-3xl bg-brand-purple p-8 sm:p-12 overflow-hidden shadow-2xl shadow-black/5 flex items-center justify-center">
-          <Image 
-            src="/image 2095.png" 
-            alt="Gridlock Gameplay" 
-            width={800} 
-            height={600} 
-            className="rounded-2xl border border-black/5 shadow-xl object-cover max-w-full h-auto"
-            priority
-          />
-        </div>
-      </section>
-
-      {/* Philosophy / Features Grid */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-8 py-24 border-t border-black/5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+      {/* 3-Column Image Showcase Grid */}
+      <section className="mx-auto max-w-7xl px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-12 items-start">
           
-          <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-light tracking-tight text-black mb-6">
-              Less noise.<br/> More focus.
-            </h2>
-            <p className="text-lg font-light text-black/60 leading-relaxed mb-6">
-              We stripped away the clutter. No flashy animations, no distracting timers. Just you, the letters, and an elegant grid that expands as you play. 
-            </p>
-            <p className="text-lg font-light text-black/60 leading-relaxed">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-full flex justify-center mb-8">
+              <Image 
+                src="/image 2095.png" 
+                alt="Gridlock Gameplay" 
+                width={600} 
+                height={800} 
+                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                priority
+              />
+            </div>
+            <h3 className="text-2xl font-medium tracking-tight text-black mb-4">
+              Pure Strategy
+            </h3>
+            <p className="text-base font-light text-black/60 leading-relaxed max-w-sm">
               Every word must be at least 3 letters long and intersect with the existing board. Think ahead. Connect the dots.
             </p>
           </div>
 
-          <div className="relative rounded-2xl bg-brand-green p-8 flex items-center justify-center">
-            <Image 
-              src="/image 2093.png" 
-              alt="Clean Interface" 
-              width={400} 
-              height={500} 
-              className="rounded-xl border border-black/5 shadow-lg max-w-full h-auto"
-            />
-          </div>
-
-        </div>
-      </section>
-
-      {/* Feature 2: Ghost Hints */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-8 py-24 border-t border-black/5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          
-          <div className="relative rounded-2xl bg-brand-purple/50 p-8 flex items-center justify-center order-2 md:order-1">
-            <Image 
-              src="/image 2094.png" 
-              alt="Ghost Hints Feature" 
-              width={400} 
-              height={500} 
-              className="rounded-xl border border-black/5 shadow-lg max-w-full h-auto"
-            />
-          </div>
-
-          <div className="flex flex-col justify-center order-1 md:order-2">
-            <h2 className="text-3xl font-light tracking-tight text-black mb-6">
-              Intuitive Ghost Hints.
-            </h2>
-            <p className="text-lg font-light text-black/60 leading-relaxed mb-6">
-              Stuck on a tricky intersection? Click multiple times to cycle through faded ghost letters showing valid possibilities directly on the grid.
+          <div className="flex flex-col items-center text-center">
+            <div className="w-full flex justify-center mb-8">
+              <Image 
+                src="/image 2093.png" 
+                alt="Clean Interface" 
+                width={600} 
+                height={800} 
+                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                priority
+              />
+            </div>
+            <h3 className="text-2xl font-medium tracking-tight text-black mb-4">
+              Less noise. More focus.
+            </h3>
+            <p className="text-base font-light text-black/60 leading-relaxed max-w-sm">
+              We stripped away the clutter. No flashy animations, no distracting timers. Just you, the letters, and an elegant grid that expands as you play.
             </p>
-            <p className="text-lg font-light text-black/60 leading-relaxed">
-              A subtle nudge to discover words you might not have thought of, without holding your hand.
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <div className="w-full flex justify-center mb-8">
+              <Image 
+                src="/image 2094.png" 
+                alt="Ghost Hints Feature" 
+                width={600} 
+                height={800} 
+                className="rounded-xl border border-black/10 shadow-sm max-w-full h-auto object-contain"
+                priority
+              />
+            </div>
+            <h3 className="text-2xl font-medium tracking-tight text-black mb-4">
+              Intuitive Ghost Hints
+            </h3>
+            <p className="text-base font-light text-black/60 leading-relaxed max-w-sm">
+              Stuck on a tricky intersection? Click multiple times to cycle through faded ghost letters showing valid possibilities directly on the grid.
             </p>
           </div>
 
@@ -98,9 +90,9 @@ export default function Home() {
       </section>
 
       {/* Google OAuth Justification for Review */}
-      <section className="bg-black/5 py-32">
+      <section className="bg-black/5 py-32 border-t border-black/5 mt-16">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-light tracking-tight text-black mb-6">
+          <h2 className="text-3xl font-medium tracking-tight text-black mb-6">
             Pick up exactly where you left off.
           </h2>
           <p className="text-lg font-light text-black/60 leading-relaxed mb-8">
